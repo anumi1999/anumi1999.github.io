@@ -10,6 +10,7 @@ var playpause = document.getElementById("play");
 
 
 function togglePlayPause() {
+   Android.showToast('');
    if (audio.paused || audio.ended) {
       playpause.title = "Pause";
       audio.play();
