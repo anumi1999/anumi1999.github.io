@@ -119,7 +119,23 @@
 			
 		</article>
 <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+							<script type='text/javascript">
+								      var audio = document.getElementById('audio');
+var playpause = document.getElementById("play");
+
+
+function togglePlayPause() {
+   Android.showToast('');
+   if (audio.paused || audio.ended) {
+      playpause.title = "Pause";
+      audio.play();
+   } else {
+      playpause.title = "Play";
+      audio.pause();
+   }
+}
+								      </script>
 
 </body>
 </html>
